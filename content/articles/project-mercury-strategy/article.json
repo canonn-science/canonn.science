@@ -1,0 +1,29 @@
+{
+  "title": "Project Mercury – Strategy",
+  "slug": "project-mercury-strategy",
+  "section": "media",
+  "date": "2017-11-15T20:13:41+00:00",
+  "author": "Timsk",
+  "excerpt": "CMDR Heisenberg6626 lays out the strategy for Project Mercury: reverse-engineering a Thargoid sensor to attempt communication with the Thargoids, including a strategy paper, the encoded morse-drawing data, and the audio of the signal.",
+  "banner": "media/banner.jpg",
+  "categories": [
+    {
+      "category": "News and Events",
+      "subs": [
+        "Mysteries & Hunts"
+      ]
+    },
+    {
+      "category": "Xenology",
+      "subs": [
+        "Thargoids"
+      ]
+    }
+  ],
+  "linked": [
+    "project-mercury-a-first-message"
+  ],
+  "format": "html",
+  "source": "wayback",
+  "original_link": "https://canonn.science/lore/project-mercury-strategy/"
+}
