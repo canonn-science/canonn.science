@@ -3,8 +3,8 @@
   "slug": "how-to-join",
   "section": "pages",
   "date": null,
-  "modified": null,
-  "excerpt": "",
+  "modified": "2026-11-08",
+  "excerpt": "Joining Canonn is now done entirely through Discord. The old multi-step website registration process described here previously is obsolete.",
   "banner": "media/Starbeaver_01_ThompsonDock.jpg",
   "categories": [
     {
@@ -14,6 +14,5 @@
   ],
   "format": "html",
   "source": "wayback",
-  "original_link": "https://canonn.science/how-to-join/",
-  "scripts": true
+  "original_link": "https://canonn.science/how-to-join/"
 }
