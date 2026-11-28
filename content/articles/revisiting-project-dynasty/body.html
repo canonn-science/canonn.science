@@ -267,7 +267,7 @@
   <li>Hawkin's Gap Beta Mission log 2/4 notes that the ships were flying without shields or guns, and Conflux Gamma Mission log 1/4 says that the ships were stripped right down. While my loadout does not meet that description perfectly, it is, in effect, just cargo space and jump range, with no shields or weapons. I also used D-rated modules wherever possible to achieve a stripped-down build while retaining the required 35&ndash;38 ly jump range.</li>
 </ol>
 
-<p>Given these specifications, I created a theoretical ship that meets the requirements above. Appendix C contains the EDSY output for the simulated Anaconda that I used in Spansh. The first page shows the readable loadout, and the second contains the SLEF file.</p>
+<p>Given these specifications, I created a theoretical ship that meets the requirements above. Appendix C shows the simulated Anaconda build in EDSY that I used in Spansh, with a link to the live, editable build.</p>
 
 <h3 id="log-dates">An Examination of the Log Dates</h3>
 
@@ -533,52 +533,6 @@ Speed &approx; 101.037 ly/day</pre>
   <img src="media/edsy-loadout.png" alt="EDSY outfitting screen showing the theoretical Project Dynasty Anaconda loadout">
   <figcaption>The theoretical Project Dynasty Anaconda loadout, as built in <a href="https://edsy.org/#/L=J600000H4C0S00,,,9p300A9400AOi00AfQG04Z_W0Aty00BAi00BRu00Bcg00,,53c001dw001OS001OS001IC0008c0008c001ao001ao001ao000Iw002jw00">EDSY</a>.</figcaption>
 </figure>
-
-<pre>[Anaconda] [+1]
-BH: 1C Lightweight Alloy
-PP: 5D Power Plant
-TH: 5D Thrusters [+1]
-FD: 6A Frame Shift Drive [+1]
-  **: Increased Range G2 100.0%, Mass Manager
-  **: Mass +15.0%; Integrity -13.5%; Power Draw +6.0%
-  **: Optimised Mass +30.0%
-LS: 5D Life Support [+1]
-PD: 7D Power Distributor [+1]
-SS: 8D Sensors [+1]
-FT: 5C Fuel Tank (Cap: 32)
-7: 7A Fuel Scoop [+1]
-6: 6E/E Economy Class Passenger Cabin
-6: 6F Large Planetary Vehicle Hangar [+1]
-6: 6F Large Planetary Vehicle Hangar [+1]
-5: 2F Large Planetary Vehicle Hangar [+1]
-5: 5E Cargo Rack (Cap: 32)
-5: 5E Cargo Rack (Cap: 32)
-4: 4E/E Economy Class Passenger Cabin
-4: 4E/E Economy Class Passenger Cabin
-4: 4E/E Economy Class Passenger Cabin
-2: 2A Auto Field-Maintenance Unit [+1]
-1: 1I Detailed Surface Scanner
----
-Mass   : 716.00 T empty
-         812.00 T full
-Fuel   : 32 T
-Cargo  : 64 T
-Cabins : 56
-Speed  : 175 m/s (233 boost)
-Range  : 38.14 ly unladen
-         35.14 ly laden
-Power  : 14.82 MW retracted (97%)
-         14.82 MW deployed (97%)
-         15.30 MW available
-Shields: none
-Armour : 945.0
-Damage : none
-Price  : 256,856,600 Cr
-Re-Buy : 12,842,830 Cr @ 95% insurance</pre>
-
-<p>This is the SLEF file produced by EDSY for the loadout above.</p>
-
-<pre>[{"header":{"appName":"EDSY","appVersion":424019902,"appURL":"https://edsy.org/#/L=J600000H4C0S00,,,9p300A9400AOi00AfQG04Z_W0Aty00BAi00BRu00Bcg00,,53c001dw001OS001OS001IC0008c0008c001ao001ao001ao000Iw002jw00"},"data":{"event":"Loadout","Ship":"anaconda","ShipName":"","ShipIdent":"","HullValue":142447820,"ModulesValue":114408780,"UnladenMass":716,"CargoCapacity":64,"MaxJumpRange":39.409057,"FuelCapacity":{"Main":32,"Reserve":1.07},"Rebuy":12842830,"Modules":[{"Slot":"CargoHatch","Item":"modularcargobaydoor","On":true,"Priority":0},{"Slot":"Armour","Item":"anaconda_armour_grade1","On":true,"Priority":0,"Value":0},{"Slot":"PowerPlant","Item":"int_powerplant_size5_class2","On":true,"Priority":0,"Value":160140},{"Slot":"MainEngines","Item":"int_engine_size5_class2","On":true,"Priority":0,"Value":189040},{"Slot":"FrameShiftDrive","Item":"int_hyperdrive_size6_class5","On":true,"Priority":0,"Value":16179530,"Engineering":{"BlueprintName":"FSD_LongRange","Level":2,"Quality":1,"ExperimentalEffect":"special_fsd_heavy","Modifiers":[{"Label":"Mass","Value":46,"OriginalValue":40},{"Label":"Integrity","Value":121.9368,"OriginalValue":141},{"Label":"PowerDraw","Value":0.795,"OriginalValue":0.75},{"Label":"FSDOptimalMass","Value":2340,"OriginalValue":1800}]}},{"Slot":"LifeSupport","Item":"int_lifesupport_size5_class2","On":true,"Priority":0,"Value":79440},{"Slot":"PowerDistributor","Item":"int_powerdistributor_size7_class2","On":true,"Priority":0,"Value":622840},{"Slot":"Radar","Item":"int_sensors_size8_class2","On":true,"Priority":0,"Value":1743960},{"Slot":"FuelTank","Item":"int_fueltank_size5_class3","On":true,"Priority":0,"Value":97750},{"Slot":"Slot01_Size7","Item":"int_fuelscoop_size7_class5","On":true,"Priority":0,"Value":91180640},{"Slot":"Slot02_Size6","Item":"int_passengercabin_size6_class1","On":true,"Priority":0,"Value":61420},{"Slot":"Slot03_Size6","Item":"int_largebuggybay_size6_class3","On":true,"Priority":0,"Value":1036800},{"Slot":"Slot04_Size6","Item":"int_largebuggybay_size6_class3","On":true,"Priority":0,"Value":1036800},{"Slot":"Slot05_Size5","Item":"int_largebuggybay_size2_class3","On":true,"Priority":0,"Value":32400},{"Slot":"Slot06_Size5","Item":"int_cargorack_size5_class1","On":true,"Priority":0,"Value":111570},{"Slot":"Slot07_Size5","Item":"int_cargorack_size5_class1","On":true,"Priority":0,"Value":111570},{"Slot":"Slot08_Size4","Item":"int_passengercabin_size4_class1","On":true,"Priority":0,"Value":18960},{"Slot":"Slot09_Size4","Item":"int_passengercabin_size4_class1","On":true,"Priority":0,"Value":18960},{"Slot":"Slot10_Size4","Item":"int_passengercabin_size4_class1","On":true,"Priority":0,"Value":18960},{"Slot":"Slot13_Size2","Item":"int_repairer_size2_class5","On":true,"Priority":0,"Value":1458000},{"Slot":"Slot14_Size1","Item":"int_detailedsurfacescanner_tiny","On":true,"Priority":0,"Value":250000}]}}]</pre>
 
 <h2 id="appendix-d">Appendix D: A Possible Dynasty Route Based on the Mathematical Evidence</h2>
 
