@@ -236,13 +236,18 @@ write('public/recently-updated.json', JSON.stringify({
   note: 'Most recently created or updated articles, newest first. kind is "new", "updated" or null (neither).',
   articles: recentAll.slice(0, 50).map((r) => ({ title: r.title, url: articleUrl(r), created: r.created, updated: r.updated, kind: r.kind })),
 }, null, 2) + '\n');
-// WordPress-REST-compatible feed for external tools built against that shape (e.g. the EDMC
-// Canonn plugin's news ticker), newest-published-first. Only `link` and `title.rendered` are
-// read by known consumers, but `date` is included since it's part of that shape too.
+// WordPress-REST-compatible feed for external tools built against that shape, newest-published-
+// first: the EDMC Canonn plugin's news ticker reads `link`/`title.rendered`; the Bluesky archive
+// bot additionally wants `id` (used as its de-dup key), `excerpt.rendered` and an image to embed,
+// which it used to get from the old `/wp-json/wp/v2/posts` endpoint's featured-media link chain.
+// `image` is that image's absolute URL directly, or null when the article has none.
 write('public/feed.json', JSON.stringify(manifest.slice(0, 10).map((r) => ({
+  id: r.slug,
   date: r.date,
   link: articleUrl(r),
   title: { rendered: r.title },
+  excerpt: { rendered: r.excerpt },
+  image: r.banner_image ? (r.banner_image.startsWith('/') ? SITE + r.banner_image : r.banner_image) : null,
 }))));
 write('content/categories.json', topicList);
 write('content/search-index.json', searchIndex);
