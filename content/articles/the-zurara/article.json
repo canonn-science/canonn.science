@@ -18,5 +18,8 @@
   "format": "html",
   "source": "wayback",
   "original_link": "https://canonn.science/codex/the-zurara/",
-  "scripts": true
+  "scripts": true,
+  "linked": [
+    "revisiting-project-dynasty"
+  ]
 }

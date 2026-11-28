@@ -17,5 +17,8 @@
   ],
   "format": "html",
   "source": "articles.json",
-  "original_link": "https://canonn.science/codex/hawkins-gap-gamma-site/"
+  "original_link": "https://canonn.science/codex/hawkins-gap-gamma-site/",
+  "linked": [
+    "revisiting-project-dynasty"
+  ]
 }

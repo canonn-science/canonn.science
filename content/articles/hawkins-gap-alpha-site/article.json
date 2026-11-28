@@ -17,5 +17,8 @@
   ],
   "format": "html",
   "source": "articles.json",
-  "original_link": "https://canonn.science/codex/hawkins-gap-alpha-site/"
+  "original_link": "https://canonn.science/codex/hawkins-gap-alpha-site/",
+  "linked": [
+    "revisiting-project-dynasty"
+  ]
 }

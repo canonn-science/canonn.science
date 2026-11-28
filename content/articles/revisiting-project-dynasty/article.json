@@ -1,0 +1,28 @@
+{
+  "title": "REVISITING PROJECT DYNASTY: A Fresh Look at an Old Mystery",
+  "slug": "revisiting-project-dynasty",
+  "section": "codex",
+  "date": "2026-11-28",
+  "author": "Toa Targus",
+  "excerpt": "A fresh look at the Project Dynasty mystery, proposing a mathematical model built from the known ground-site logs and the Zurara to reconstruct the three fleets' routes and identify regions that may still hide undiscovered assets.",
+  "banner": "media/route_diagram.png",
+  "categories": [
+    { "category": "News and Events", "subs": ["Mysteries & Hunts"] },
+    { "category": "Cartographics & Exploration", "subs": ["Cartographics"] }
+  ],
+  "linked": [
+    "formidine-rift-alpha-site",
+    "formidine-rift-beta-site",
+    "formidine-rift-delta-site",
+    "formidine-rift-gamma-site",
+    "hawkins-gap-alpha-site",
+    "hawkins-gap-beta-site",
+    "hawkins-gap-delta-site",
+    "hawkins-gap-gamma-site",
+    "conflux-alpha-site",
+    "conflux-beta-site",
+    "conflux-delta-site",
+    "conflux-gamma-site",
+    "the-zurara"
+  ]
+}
