@@ -17,5 +17,8 @@
   ],
   "format": "html",
   "source": "articles.json",
-  "original_link": "https://canonn.science/codex/conflux-beta-site/"
+  "original_link": "https://canonn.science/codex/conflux-beta-site/",
+  "linked": [
+    "revisiting-project-dynasty"
+  ]
 }
