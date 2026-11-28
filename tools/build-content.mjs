@@ -8,6 +8,7 @@
 //   content/articles/<slug>.json   (sanitised, pre-segmented article)
 //   media/<slug>/...  media/_shared/...
 //   public/recently-updated.json   static feed for external tools, served at the site root
+//   public/feed.json               WordPress-REST-shaped feed for the EDMC Canonn plugin etc.
 import { copyFileSync, linkSync, mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { ROOT, sanitizeBody, rewriteMediaUrl } from './lib/policy.mjs';
@@ -235,6 +236,14 @@ write('public/recently-updated.json', JSON.stringify({
   note: 'Most recently created or updated articles, newest first. kind is "new", "updated" or null (neither).',
   articles: recentAll.slice(0, 50).map((r) => ({ title: r.title, url: articleUrl(r), created: r.created, updated: r.updated, kind: r.kind })),
 }, null, 2) + '\n');
+// WordPress-REST-compatible feed for external tools built against that shape (e.g. the EDMC
+// Canonn plugin's news ticker), newest-published-first. Only `link` and `title.rendered` are
+// read by known consumers, but `date` is included since it's part of that shape too.
+write('public/feed.json', JSON.stringify(manifest.slice(0, 10).map((r) => ({
+  date: r.date,
+  link: articleUrl(r),
+  title: { rendered: r.title },
+}))));
 write('content/categories.json', topicList);
 write('content/search-index.json', searchIndex);
 
